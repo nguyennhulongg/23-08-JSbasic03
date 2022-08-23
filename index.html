@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <button onclick="slash()">show current day with slash</button>
+    <button onclick="dash()">show current day with dash</button>
+    <p id="slash"></p>
+    <script>
+        let a = new Date();
+        let b = new Date();
+        let c = new Date();
+        function slash() {
+            document.getElementById("slash").innerHTML = a.getFullYear() + "/" + b.getMonth() + "/"+ c.getDay()
+        }
+        function dash() {
+            document.getElementById("slash").innerHTML = a.getFullYear() + "-" + b.getMonth() + "-"+ c.getDay()
+        }
+    </script>
+</body>
+</html>
